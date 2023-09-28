@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Estilocar.css">
+    <div class="contenedor">
+        <title>Carrusel</title>
+        <p>CARRUSEL DE FUMOS</p>
+    </div>
+</head>
+<body>
+    <div class="carrusel">
+        <div class="carrusel-imagenes">
+            <img class="imagen-carrusel" src="../Pag/fumo/fumo/1.png" alt="Imagen 1">
+            <a class="boton-entrar" href="Web3.html">ENTRAR</a>
+            <img class="imagen-carrusel" src="../Pag/fumo/fumo/2.png" alt="Imagen 2">
+            <a class="boton-entrar" href="Web4.html">ENTRAR</a>
+            <img class="imagen-carrusel" src="../Pag/fumo/fumo/3.png" alt="Imagen 3">
+            <a class="boton-entrar" href="Web5.html">ENTRAR</a>
+            <img class="imagen-carrusel" src="../Pag/fumo/fumo/4.png" alt="Imagen 4">
+            <a class="boton-entrar" href="pagina4.html">ENTRAR</a>
+            <img class="imagen-carrusel" src="../Pag/fumo/fumo/5.png" alt="Imagen 5">
+            <a class="boton-entrar" href="pagina5.html">ENTRAR</a>
+            <img class="imagen-carrusel" src="../Pag/fumo/fumo/6.png" alt="Imagen 6">
+            <a class="boton-entrar" href="pagina6.html">ENTRAR</a>
+            <img class="imagen-carrusel" src="../Pag/fumo/fumo/7.png" alt="Imagen 7">
+            <a class="boton-entrar" href="pagina7.html">ENTRAR</a>
+            <img class="imagen-carrusel" src="../Pag/fumo/fumo/8.png" alt="Imagen 8">
+            <a class="boton-entrar" href="pagina8.html">ENTRAR</a>
+            
+        </div>
+    </div>
+
+    <!-- Botones de flecha para avanzar y retroceder -->
+    <div class="botones-container">
+        <button id="anterior">← Anterior</button>
+        <button id="siguiente">Siguiente →</button>
+    </div>
+    <a href="Web.html" class="boton-volver">Salir</a>
+    
+    <script>
+        // JavaScript para el carrusel
+        const carrusel = document.querySelector('.carrusel-imagenes');
+        const botonesEntrar = document.querySelectorAll('.boton-entrar');
+        const anteriorBtn = document.getElementById('anterior');
+        const siguienteBtn = document.getElementById('siguiente');
+        let indice = 0;
+
+        function mostrarImagen(indice) {
+            carrusel.style.transform = `translateX(-${indice * 500}px)`;
+        }
+
+        function avanzar() {
+            indice++;
+            if (indice > 7) {
+                indice = 0;
+            }
+            mostrarImagen(indice);
+        }
+
+        function retroceder() {
+            indice--;
+            if (indice < 0) {
+                indice = 7;
+            }
+            mostrarImagen(indice);
+        }
+
+        siguienteBtn.addEventListener('click', avanzar);
+        anteriorBtn.addEventListener('click', retroceder);
+
+        // Asigna enlaces "ENTRAR" a las imágenes
+        botonesEntrar.forEach((boton, index) => {
+            boton.addEventListener('click', () => {
+                const pagina = `pagina${index + 1}.html`; // Genera el nombre de la página correspondiente
+                window.location.href = pagina; // Redirecciona a la página correspondiente
+            });
+        });
+
+        mostrarImagen(indice); // Muestra la primera imagen al cargar la página
+    </script>
+</body>
+</html>

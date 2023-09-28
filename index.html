@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+      if("serviceWorker" in navigator)
+      {
+          navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+    <title>Inicia Sesión</title>
+</head>
+<p2>FUMOS
+</p2>
+<body>
+    <form class="form">
+        <h2>Iniciar Sesión</h2>
+        <input type="text" class="name entry " placeholder="Nombre"/>
+        
+        <input type="text" class="email entry" placeholder="Correo"/>
+        
+        <textarea class="telefono entry" placeholder="Telefono"></textarea> 
+        
+        <a href="Web2.html" class="submit entry">Entrar</a>
+        
+      </form>  
+      <div id="social-media">
+        <div class="media-container">
+          <a class="btnn btnn-icon btnn-facebook" href="https://www.facebook.com/?locale=es_LA"><i class="fa fa-facebook">
+        </i><span>Facebook</span></a>
+        </div>
+        <div class="media-container">
+           <a class="btnn btnn-icon btnn-instagram" href="https://www.instagram.com/"><i class="fa fa-instagram">
+      </i><span>Instagram</span></a>
+        </div>
+        <div id="feature" style="background-image: url('https://staticdelivery.nexusmods.com/mods/1704/images/headers/64466_1646292935.jpg');background-size:cover;" ;></div>
+</body>
+</html>

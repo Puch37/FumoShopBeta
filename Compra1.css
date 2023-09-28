@@ -1,0 +1,167 @@
+.boton-volver {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); /* Color del texto blanco */
+    padding: 8px 15px; /* Tamaño del botón pequeño */
+    font-size: 18px; /* Tamaño de fuente */
+    font-family: Arial, Helvetica, sans-serif;
+    border: none; /* Sin bordes */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones para cambiar colores */
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+}
+
+/* Estilos para el botón de volver al pasar el mouse */
+.boton-volver:hover {
+    background-color: #fbfeff; /* Cambia de color al pasar el mouse */
+    color: rgb(0, 0, 0); /* Cambia de color al pasar el mouse */
+    border-bottom: 5px solid #ffffff;
+}
+
+/* Estilos para el botón de volver cuando se pulsa */
+.boton-volver:active {
+    background-color: red; /* Cambia de color al pulsar */
+    color: white; /* Cambia de color al pulsar */
+    
+}
+/* Estilos generales */
+body {
+    background: rgb(97,97,97);
+    background: linear-gradient(0deg, rgba(97,97,97,1) 0%, rgba(249,249,249,1) 94%);
+}
+
+header {
+    font-size: 15px;
+    font-family:fantasy;
+    line-height: 1.5;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    background-image: url('https://comicstud.io/c/bivaggabik.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(196, 196, 196, 0.434)), url('https://comicstud.io/c/bivaggabik.png');
+    background-size: cover;
+    background-position: 35px;
+    color: #ffffff;
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px 5px #000000;
+    margin: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+/* Estilos para los productos */
+.producto {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.producto h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.producto p {
+    font-size: 1rem;
+    color: #777;
+    margin: 10px 0;
+}
+
+.producto strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.producto input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.producto .comprar,
+.producto .favorito {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.producto .comprar:hover,
+.producto .favorito:hover {
+    background-color: #0056a0;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: rgb(255,148,162);
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 17%, rgba(253,29,29,1) 54%, rgba(255,2,9,1) 55%, rgba(84,69,252,1) 86%);    
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.505);
+}
+
+.contacto-empresa,
+.redes-sociales {
+    flex-basis: 50%;
+}
+
+.contacto-empresa h3,
+.redes-sociales h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contacto-empresa p,
+.redes-sociales a {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+/* ... Estilos previos ... */
+
+/* Estilo para el botón "Favorito" activo */
+.favorito.activo {
+    background-color: #ff6b6b; /* Color cuando está marcado como favorito */
+    color: #fff;
+}

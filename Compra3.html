@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Compra1.css">
+    <title>Tienda en Línea</title>
+</head>
+<body>
+    <header>
+        <h1>Tienda en Línea</h1>
+        <a href="Web5.html" class="boton-volver">Regresar</a>
+    </header>
+
+    <main>
+        <div class="producto">
+            <img src="../Pag/fumo/fumo/21.png" alt="Producto 1">
+            <h2>Producto 1</h2>
+            <p>Descripción del producto 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p><strong>Precio: $99.99</strong></p>
+            <input type="number" value="1" min="1" max="10">
+            <button class="comprar">Comprar</button>
+            <button class="favorito" onclick="toggleFavorito(this)">❤ Favorito</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contacto-empresa">
+            <h3>Información de Contacto</h3>
+            <p>Dirección: Calle Principal, Ciudad</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Correo Electrónico: info@tuempresa.com</p>
+        </div>
+        <div class="redes-sociales">
+            <h3>Síguenos en Redes Sociales</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFavorito(button) {
+            button.classList.toggle("activo");
+        }
+    </script>
+</body>
+</html>

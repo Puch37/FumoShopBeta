@@ -1,0 +1,124 @@
+.comprar {
+    background-color: #3466fc; /* Color de fondo negro */
+    color: rgb(255, 255, 255); /* Color del texto blanco */
+    padding: 8px 15px; /* Tamaño del botón pequeño */
+    font-size: 18px; /* Tamaño de fuente */
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones para cambiar colores */
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+}
+.comprar:hover {
+    background-color: #87cefa; /* Cambia de color al pasar el mouse */
+    color: rgb(255, 255, 255); /* Cambia de color al pasar el mouse */
+    border-bottom: 5px solid #ffffff;
+}
+
+/* Estilos para el botón de volver cuando se pulsa */
+.comprar:active {
+    background-color: red; /* Cambia de color al pulsar */
+    color: white; /* Cambia de color al pulsar */
+    
+}
+    
+p {     font-size: 40px;
+    font-family:fantasy;
+    line-height: 1.5;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    background-image: url('https://comicstud.io/c/bivaggabik.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(196, 196, 196, 0.434)), url('https://comicstud.io/c/bivaggabik.png');
+    background-size: cover;
+    background-position: 35px;
+    color: #ffffff;
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px 5px #000000;
+    margin: 10px;
+}
+
+body{
+    background: rgb(97,97,97);
+background: linear-gradient(0deg, rgba(97,97,97,1) 0%, rgba(249,249,249,1) 94%);
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.columna {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 20px 5px #00000080;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0); /* Sin cambio en la posición vertical */
+    }
+    50% {
+        transform: translateY(-10px); /* Eleva la imagen 10px */
+    }
+}
+
+/* Aplica la animación "flotar" a la imagen */
+
+
+img {
+    max-width: 100%;
+    height: 200px;
+    animation: flotar 2s ease infinite; /* Repite la animación infinitamente */
+}
+
+.boton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+.boton-volver {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); /* Color del texto blanco */
+    padding: 8px 15px; /* Tamaño del botón pequeño */
+    font-size: 18px; /* Tamaño de fuente */
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones para cambiar colores */
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+}
+
+/* Estilos para el botón de volver al pasar el mouse */
+.boton-volver:hover {
+    background-color: #ffffff; /* Cambia de color al pasar el mouse */
+    color: rgb(0, 0, 0); /* Cambia de color al pasar el mouse */
+    border-bottom: 5px solid #ffffff;
+}
+
+/* Estilos para el botón de volver cuando se pulsa */
+.boton-volver:active {
+    background-color: red; /* Cambia de color al pulsar */
+    color: white; /* Cambia de color al pulsar */
+    
+}
+    
